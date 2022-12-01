@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test!</title>
+    <style>
+        body {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        button {
+            text-align: center;
+            text-transform: capitalize;
+            width: 20rem;
+            display: block;
+            margin: 2em 0;
+            padding: 1em 2em;
+            font-size: 1em;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Test Yourself</h1>
+
+    <h2>getElementByClassName()</h2>
+
+    <button onclick="green()" class="green undo">Click to change this to green </button>
+    <button onclick="blue()" class="blue undo">Click to change this to blue </button>
+    <button onclick="red()" class="red undo">Click to change this to red </button>
+    <button onclick="undo()" class="undo">Undo </button>
+
+    <script>
+
+
+
+        function green() {
+            let btn = document.getElementsByClassName('green')
+            for (let i = 0; i < btn.length; i++) {
+                // console.log(btn)
+                btn[i].style.background = 'green'
+            }
+
+        }
+        function blue() {
+            let btn = document.getElementsByClassName('blue')
+            for (let i = 0; i < btn.length; i++) {
+                // console.log(btn)
+                btn[i].style.background = 'blue'
+            }
+
+        }
+        function red() {
+            let btn = document.getElementsByClassName('red')
+            for (let i = 0; i < btn.length; i++) {
+                // console.log(btn)
+                btn[i].style.background = 'red'
+            }
+
+        }
+
+        function undo() {
+            let btn = document.getElementsByClassName('undo')
+            for (let i = 0; i < btn.length; i++) {
+                // console.log(btn)
+                btn[i].style.background = 'black'
+            }
+
+        }
+
+        // let greColor = 'green'
+        // let bluColor = 'blue'
+        // let rColor = 'red'
+        // let btn = document.getElementsByClassName('btn')
+        // function addListener(position, color) {
+        //     console.log("clicked")
+        //     btn[position].addEventListener("click", function () {
+        //         btn[position].style.background = color
+        //     })
+        // }
+
+
+        // for (let i = 0; i < btn.length; i++) {
+        //     console.log(btn[i])
+        //     if (btn[i] === 0) {
+        //         console.log("click")
+        //         addListener(i, greColor)
+        //     }
+        // }
+
+    </script>
+
+</body>
+
+</html>

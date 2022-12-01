@@ -1,0 +1,33 @@
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+
+    <h1> Wanna find out what Shivoo means?</h1>
+    <p>To find out, click the button below. The new window will close after 500ms (aks:5 seconds )</p>
+    <button onclick="newWindow()">Click me </button>
+
+
+    <script>
+
+        function newWindow() {
+            window.alert('hit')
+            console.log("hi")
+            let url = 'https://dictionary.com/browse/pinto?s=t';
+            let newWindow = window.open(url, "", "height:400px,width:400px");
+
+
+            setTimeout(() => {
+                newWindow.close()
+
+            }, 4000);
+        }
+    </script>
+
+</body>
+
+</html>
